@@ -1,6 +1,5 @@
 version: "3"
 services:
-
   oj-redis:
     image: redis:4.0-alpine
     restart: always
@@ -41,7 +40,7 @@ services:
       # - judger_debug=1
 
   oj-backend:
-    image: registry.cn-hongkong.aliyuncs.com/oj-image/backend:1.6.1
+    image: 7io63/qduoj-backend:latest
     restart: always
     depends_on:
       - oj-redis
