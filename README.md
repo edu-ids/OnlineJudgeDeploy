@@ -25,7 +25,11 @@
     git clone -b 2.0 https://github.com/edu-ids/OnlineJudgeDeploy.git && cd OnlineJudgeDeploy
     ```
 
-2. Docker-Composeを立ち上げる
+2. 適切にdocker-compose.ymlを書き換える
+
+   一部，CHANGE_THISみたいなやつがあるのでそこら辺は対応したほうがいいと思います．
+
+3. Docker-Composeを立ち上げる
 
     ```bash
     docker-compose up -d
@@ -35,6 +39,6 @@
 
  `docker ps -a`を実行して `unhealthy` や `Exited (x) xxx` になってなければOK
 
-## フォークもと
+## フォーク元
 
 https://github.com/QingdaoU/OnlineJudgeDeploy
